@@ -1,18 +1,25 @@
 # REDI Sprint 2020 Frontend Development 2, Final Project
 
-Application Name: {app-name}
+Application Name: ReDI-Run-App
 
-Student Name: {student-name}
+Student Name: Natalia Gubanova
 
-## {app-name}
+## ReDI-Run-App
 
-{short explanation of your application}
+App to configure your personal running plan and track its completeness. Calculates your approximate heart rate zones which helps you to focus in on different training intensities.
 
 ## Screenshots
 
-![screen shot](docs/screen_cap.png)
+- Sitemap:
+
+![screen shot](docs/sitemap.png)
 
 ## Features:
 
-- {feature 1}
-- {feature 2}
+- Calculation of approximate heart rate zones
+- Configuration of personal running training plan
+- Track its completeness
+
+---
+
+*[create-react-app README.md](docs/React_README.md)*
