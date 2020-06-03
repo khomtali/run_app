@@ -22,9 +22,9 @@ App to configure your personal running plan and track its completeness. Calculat
 
 ## How to setup and run ReDI-Run-App
 
-1. Clone repository on your computer
-  - with HTTPS `git clone https://github.com/redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
-  - with SSH `git clone git@github.com:redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
+1. Clone repository to your computer
+   - with HTTPS `git clone https://github.com/redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
+   - with SSH `git clone git@github.com:redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
 1. Go to the project directory `cd js_sprint_2020_final_project_khomtali`
 1. Then run `npm install` and wait for installing all modules
 1. Run `npm start` and enjoy :) 
