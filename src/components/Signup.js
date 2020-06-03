@@ -23,7 +23,7 @@ function Signup() {
         :
         <button type="button" onClick={handleLogoutClick}>Logout</button>
       }
-      <p>Username: {user ? user.remote_data.nickname : '?'}</p>
+      <p>Username: {user ? user.authData.nickname : '?'}</p>
       <p>Token: {user && user.token ? user.token : '?'}</p>
     </div>
   );

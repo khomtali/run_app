@@ -30,9 +30,21 @@ export const getUser = async () => {
         return;
     }
 
+    const token = await auth0.getTokenSilently();
+    const auth0UserData = await auth0.getUser();
+    
+    // TODO: now that we have auth0 user we need to get our full user or create one from the backend
+    // const response = await fetch(backendURL + '/user', {
+    //     headers: {
+    //       Authorization: `Bearer ${token}`
+    //     }
+    //   });
+    // const user = await response.json();
+
     return {
-        token: await auth0.getTokenSilently(),
-        remote_data: await auth0.getUser()
+        // ...user,
+        token,
+        authData: auth0UserData
     }
 };
 
