@@ -1,0 +1,11 @@
+.zone-calculator {
+  width: 60vw;
+}
+
+.zone-calculator__table {
+  margin-top: 20px;
+}
+
+tbody {
+  text-align: left;
+}
