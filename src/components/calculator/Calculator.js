@@ -6,7 +6,7 @@ import './Calculator.css';
 
 function Calculator() {
   const [zones, setZones] = useState([]);
-  const handleSubmit = (form) => {
+  const handleSubmit = form => {
     const userInput = new ZoneDataModel(form);
     setZones(userInput.calculateZones);
   };

@@ -5,12 +5,12 @@ function CalculatorInput(props) {
   const initialState = { userAge: '', restRate: '' };
   const [form, setForm] = useState(initialState);
 
-  const handleChange = evt => {
-    const { name, value } = evt.target;
+  const handleChange = event => {
+    const { name, value } = event.target;
     setForm(prevForm => ({ ...prevForm, [name]: value }));
   };
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
+  const handleSubmit = event => {
+    event.preventDefault();
     props.onSubmit(form);
     setForm(initialState);
   }
