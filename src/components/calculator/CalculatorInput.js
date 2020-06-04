@@ -13,7 +13,8 @@ function CalculatorInput(props) {
     event.preventDefault();
     props.onSubmit(form);
     setForm(initialState);
-  }
+  };
+
   return (
     <div className="zone-calculator__input-form">
       <form onSubmit={handleSubmit}>
@@ -26,7 +27,7 @@ function CalculatorInput(props) {
         <button>Calculate</button>
       </form>
     </div>
-  )
+  );
 }
 
 CalculatorInput.propTypes = {

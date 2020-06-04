@@ -5,9 +5,11 @@ import zonesDescription from '../../constants.js';
 
 function ZonesTable(props) {
   const zones = props.output;
+
   const handleSubmit = event => {
     event.preventDefault();
   };
+
   return (
     <div className="zone-calculator__table">
       <table>
@@ -28,7 +30,7 @@ function ZonesTable(props) {
         <button>Recalculate</button>
       </form>
     </div>
-  )
+  );
 }
 
 ZonesTable.propTypes = {

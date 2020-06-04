@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header/Header.js';
+import Header from './components/header/Header';
+import Signup from './components/auth/Signup';
 import Calculator from './components/calculator/Calculator';
-import SignUpForm from './components/sign-up-form/SignUpForm';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <main>
         <Calculator />
-        <SignUpForm />
+        <Signup />
       </main>
       <Footer />
     </>
