@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { login, logout, authFlow } from '../auth';
+import React from 'react';
+import { useUserContext } from '../auth/hook';
+import { login, logout } from '../auth';
 
 function Signup() {
-  const [user, setUser] = useState();
-  useEffect(() => {
-    authFlow((user) => {
-      setUser(user);
-      console.log('user', user);
-    });
-  }, []);
+  const { user } = useUserContext();
+
 
   const handleSignupClick = async () => {
     login();
