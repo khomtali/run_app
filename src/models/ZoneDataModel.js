@@ -7,6 +7,7 @@ class ZoneDataModel {
     this.zones = [];
     this.zonesPercentage = [ [0.5, 0.6], [0.6, 0.7], [0.7, 0.8], [0.8, 0.9], [0.9, 1] ];
   }
+  
   get calculateZones() {
     this.zonesPercentage.forEach(range => 
       this.zones.push(range.map(perc =>

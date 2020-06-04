@@ -8,7 +8,7 @@ function ZoneRow(props) {
       <th>{props.description.effort}</th>
       <th>{props.description.effect}</th>
     </tr>
-  )
+  );
 }
 
 ZoneRow.propTypes = {

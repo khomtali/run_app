@@ -9,3 +9,7 @@
 tbody {
   text-align: left;
 }
+
+form input {
+  display: block;
+}
