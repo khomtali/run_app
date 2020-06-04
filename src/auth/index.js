@@ -10,11 +10,17 @@ export const configureClient = async () => {
     const response = await fetch(backendURL + '/client-info');
     const config = await response.json();
 
+    console.log('config', config);
     // createAuth0Client comes from auth0 script tag
-    auth0 = await window.createAuth0Client({
-        domain: config.domain,
-        client_id: config.client_id
-    });
+    try {
+        auth0 = await window.createAuth0Client({
+            domain: config.domain,
+            client_id: config.client_id,
+            audience: config.audience
+        });
+    } catch (e) {
+        console.log('e', e);
+    }
 };
 
 export const handleAuth0Callback = async () => {
@@ -33,16 +39,16 @@ export const getUser = async () => {
     const token = await auth0.getTokenSilently();
     const auth0UserData = await auth0.getUser();
     
-    // TODO: now that we have auth0 user we need to get our full user or create one from the backend
-    // const response = await fetch(backendURL + '/user', {
-    //     headers: {
-    //       Authorization: `Bearer ${token}`
-    //     }
-    //   });
-    // const user = await response.json();
+    // get full user from the backend
+    const response = await fetch(backendURL + 'user', {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+    const user = await response.json();
 
     return {
-        // ...user,
+        ...user,
         token,
         authData: auth0UserData
     }

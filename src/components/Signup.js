@@ -6,6 +6,7 @@ function Signup() {
   useEffect(() => {
     authFlow((user) => {
       setUser(user);
+      console.log('user', user);
     });
   }, []);
 
@@ -24,7 +25,7 @@ function Signup() {
         <button type="button" onClick={handleLogoutClick}>Logout</button>
       }
       <p>Username: {user ? user.authData.nickname : '?'}</p>
-      <p>Token: {user && user.token ? user.token : '?'}</p>
+      <p>Token: {user && user.token ? 'recived token' : '?'}</p>
     </div>
   );
 }
