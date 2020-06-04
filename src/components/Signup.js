@@ -5,23 +5,20 @@ import { login, logout } from '../auth';
 function Signup() {
   const { user } = useUserContext();
 
-
   const handleSignupClick = async () => {
     login();
-  }
-
+  };
   const handleLogoutClick = async () => {
     logout();
-  }
+  };
+
   return (
     <div>
       {!user ?
-        <button type="button" onClick={handleSignupClick}>Signup/Login</button>
+        <button type="button" onClick={handleSignupClick}>Signup or Login</button>
         :
         <button type="button" onClick={handleLogoutClick}>Logout</button>
       }
-      <p>Username: {user ? user.authData.nickname : '?'}</p>
-      <p>Token: {user && user.token ? 'recived token' : '?'}</p>
     </div>
   );
 }
