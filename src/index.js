@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { UserProvider } from './auth/hook';
+import UserProvider from './components/auth/UserProvider';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

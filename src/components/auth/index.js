@@ -4,7 +4,7 @@ const backendURL = process.env.REACT_APP_BACKEND_URL;
 
 export const configureClient = async () => {
   if (typeof auth0 !== 'undefined') {
-    console.log('skipping config')
+    console.log('skipping config');
     return;
   }
   const response = await fetch(backendURL + '/client-info');
@@ -72,4 +72,4 @@ export const authFlow = async (cb) => {
   if (await isAuthenticated()) {
     cb(await getUser());
   }
-}
+};
