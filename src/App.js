@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header';
-import Signup from './components/auth/Signup';
+import Menu from './components/menu/Menu';
 import Calculator from './components/calculator/Calculator';
 import Footer from './components/footer/Footer';
 
@@ -10,8 +10,8 @@ function App() {
     <>
       <Header />
       <main>
+        <Menu />
         <Calculator />
-        <Signup />
       </main>
       <Footer />
     </>

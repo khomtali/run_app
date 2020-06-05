@@ -13,13 +13,13 @@ function Signup() {
   };
 
   return (
-    <div>
+    <>
       {!user ?
         <button type="button" onClick={handleSignupClick}>Signup or Login</button>
         :
         <button type="button" onClick={handleLogoutClick}>Logout</button>
       }
-    </div>
+    </>
   );
 }
 
