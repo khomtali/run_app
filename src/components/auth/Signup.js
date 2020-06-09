@@ -1,6 +1,6 @@
 import React from 'react';
 import { useUserContext } from '../../contexts/UserContext';
-import { login, logout } from '../../auth';
+import { login, logout } from '../../functions/auth';
 
 function Signup() {
   const { user } = useUserContext();

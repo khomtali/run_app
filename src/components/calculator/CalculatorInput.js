@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useUserContext } from '../../contexts/UserContext';
+import { saveUserData } from '../../functions/userData';
 
 function CalculatorInput(props) {
   const initialState = { userAge: '', restRate: '' };
   const [form, setForm] = useState(initialState);
+  const { user } = useUserContext();
 
   const handleChange = event => {
     const { name, value } = event.target;
@@ -12,6 +15,7 @@ function CalculatorInput(props) {
   const handleSubmit = event => {
     event.preventDefault();
     props.onSubmit(form);
+    saveUserData(user, form);
     setForm(initialState);
   };
 

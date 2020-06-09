@@ -7,7 +7,7 @@ export const configureClient = async () => {
     console.log('skipping config');
     return;
   }
-  const response = await fetch(backendURL + '/client-info');
+  const response = await fetch(backendURL + 'client-info');
   const config = await response.json();
 
   console.log('config', config);

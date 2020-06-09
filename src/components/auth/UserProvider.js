@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { UserContext } from '../../contexts/UserContext';
-import { authFlow } from '../../auth';
+import { authFlow } from '../../functions/auth';
 
 function UserProvider(props) {
 	// ref: https://stackoverflow.com/questions/58197800/set-the-data-in-react-context-from-asynchronous-api-call
