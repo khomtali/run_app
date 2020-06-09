@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header/Header';
-import Menu from './components/menu/Menu';
-import Calculator from './components/calculator/Calculator';
-import Footer from './components/footer/Footer';
+import Header from './components/header';
+import Menu from './components/menu/';
+import Calculator from './components/calculator/';
+import Footer from './components/footer/';
 
 function App() {
   return (
