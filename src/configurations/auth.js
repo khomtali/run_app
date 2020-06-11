@@ -18,8 +18,8 @@ export const configureClient = async () => {
       client_id: config.client_id,
       audience: config.audience
     });
-  } catch (e) {
-    console.log('e', e);
+  } catch (err) {
+    console.error(err);
   }
 };
 

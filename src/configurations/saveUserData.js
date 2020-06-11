@@ -6,13 +6,17 @@ export const saveUserData = async (user, data) => {
       'content-type': 'application/json'
     },
     'body': JSON.stringify({
-      'id': user.auth0_id,
-      'fields': {
-        'age': data.userAge,
-        'resting_heart_rate': data.restRate
+      id: user.auth0_id,
+      fields: {
+        age: data.userAge,
+        resting_heart_rate: data.restRate
       }
     })
   });
-  const { status } = await response.text();
-  console.log(status);
+  try {
+    const { status } = await response.json();
+    if (status === 'success') console.log('data successfully saved');
+  } catch (err) {
+    console.error(err);
+  }
 };
