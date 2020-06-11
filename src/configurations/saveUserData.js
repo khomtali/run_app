@@ -3,15 +3,15 @@ export const saveUserData = async (user, data) => {
     'method': 'PATCH',
     'headers': {
       'authorization': `Bearer ${user.token}`,
-      'contentType': 'application/json'
+      'content-type': 'application/json'
     },
-    'body': {
-      'auth0_id': user.auth0_id,
+    'body': JSON.stringify({
+      'id': user.auth0_id,
       'fields': {
         'age': data.userAge,
         'resting_heart_rate': data.restRate
       }
-    }
+    })
   });
   const { status } = await response.text();
   console.log(status);
