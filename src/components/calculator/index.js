@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CalculatorInput from './CalculatorInput';
 import ZonesTable from './ZonesTable';
 import ZoneDataModel from '../../models/ZoneDataModel';
-import './Calculator.css';
+import './styles.css';
 
 function Calculator() {
   const [zones, setZones] = useState([]);

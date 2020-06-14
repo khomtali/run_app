@@ -7,9 +7,9 @@ function Title() {
   return (
     <>
       {!user ?
-        <h3>Welcome to redi-run!</h3>
+        <h3>Welcome to ReDI-Run-App!</h3>
         :
-        <h3>Welcome to redi-run, {user.authData.nickname}!</h3>
+        <h3>Welcome to ReDI-Run-App, {user.authData.nickname}!</h3>
       }
     </>
   );

@@ -15,9 +15,9 @@ function Signup() {
   return (
     <>
       {!user ?
-        <button type="button" onClick={handleSignupClick}>Signup or Login</button>
+        <div className="login" onClick={handleSignupClick}>Signup or Login</div>
         :
-        <button type="button" onClick={handleLogoutClick}>Logout</button>
+        <div className="logout" onClick={handleLogoutClick}>Logout</div>
       }
     </>
   );
