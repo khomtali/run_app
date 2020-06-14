@@ -7,7 +7,7 @@ export const configureClient = async () => {
     console.log('skipping config');
     return;
   }
-  const response = await fetch(backendURL + '/client-info');
+  const response = await fetch(backendURL + 'client-info');
   const config = await response.json();
 
   console.log('config', config);
@@ -18,8 +18,8 @@ export const configureClient = async () => {
       client_id: config.client_id,
       audience: config.audience
     });
-  } catch (e) {
-    console.log('e', e);
+  } catch (err) {
+    console.error(err);
   }
 };
 

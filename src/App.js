@@ -1,17 +1,27 @@
 import React from 'react';
+// import { useUserContext } from './contexts/UserContext';
+import Header from './components/header';
+import Menu from './components/menu/';
+import Calculator from './components/calculator/';
+// import UserProfile from './components/user-profile';
+import Footer from './components/footer/';
 import './App.css';
-import Header from './components/header/Header';
-import Menu from './components/menu/Menu';
-import Calculator from './components/calculator/Calculator';
-import Footer from './components/footer/Footer';
 
 function App() {
+  // const { user } = useUserContext();
+
   return (
     <>
       <Header />
       <main>
         <Menu />
-        <Calculator />
+        <div className="content">
+          {/* {!user ? */}
+            <Calculator />
+            {/* : */}
+            {/* <UserProfile /> */}
+          {/* } */}
+        </div>
       </main>
       <Footer />
     </>
