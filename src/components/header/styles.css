@@ -1,0 +1,60 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 15px 0 15px;
+  height: 50px;
+  max-width: 1200px;
+}
+
+.header__inner__logo a {
+  font-family: 'Bungee Inline', cursive;
+  text-decoration: none;
+  font-size: 2em;
+  color: #4bd0a0;
+}
+
+.header__inner__account {
+  display: flex;
+  align-items: center;
+}
+
+.header__account__icon {
+  width: 2em;
+  height: 2em;
+  opacity: 0.7;
+  border: solid 1px #666;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.header__inner__account > div {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header__inner__account > div:hover {
+  color: #4bd0a0;
+}
+
+.header__inner__account > div::before {
+  padding-right: 10px;
+}
+
+.login::before {
+  content: '\F02C';
+  font-family: fontello;
+}
+
+.logout::before {
+  content: '\F02D';
+  font-family: fontello;
+}

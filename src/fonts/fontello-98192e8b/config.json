@@ -1,0 +1,46 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "a6b6f85116fc55e4a7c83d66973035a7",
+      "css": "logout-1",
+      "code": 61485,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "5adef5b3275fcd874b0815a0637c5800",
+      "css": "login",
+      "code": 61484,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "862129f833b09f3d34ae39acf8484a7b",
+      "css": "heart-broken",
+      "code": 61480,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "4615d277156195624f442e69958ea863",
+      "css": "calendar",
+      "code": 62661,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "15ba51cbb4d05e6fb88f03a31a7c711c",
+      "css": "info-circled-alt",
+      "code": 61574,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "8f25d96c5665c84e4403538eef14ec2c",
+      "css": "info-circled",
+      "code": 61573,
+      "src": "mfglabs"
+    }
+  ]
+}
