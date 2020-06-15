@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navigation() {
   const activeStyle = {
@@ -7,21 +7,25 @@ function Navigation() {
   };
 
   return (
-    <Router>
-      <div className="navigation">
-        <nav>
+    <nav className="navigation">
+      <ul>
+        <li>
           <NavLink to="/training" activeStyle={activeStyle} className="navigation__link training">
             Training plan
           </NavLink>
+        </li>
+        <li>
           <NavLink to="/zones" activeStyle={activeStyle} className="navigation__link zones">
             Heart Rate Zones
           </NavLink>
+        </li>
+        <li>
           <NavLink to="/profile" activeStyle={activeStyle} className="navigation__link profile">
             My Profile
           </NavLink>
-        </nav>
-      </div>
-    </Router>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
