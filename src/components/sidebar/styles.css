@@ -3,6 +3,11 @@
   padding: 0 15px 0 15px;
 }
 
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
 .navigation__link {
   display: block;
   margin-bottom: 10px;

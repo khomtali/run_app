@@ -15,7 +15,7 @@ header {
   max-width: 1200px;
 }
 
-.header__inner__logo a {
+.header__inner__logo__link {
   font-family: 'Bungee Inline', cursive;
   text-decoration: none;
   font-size: 2em;
