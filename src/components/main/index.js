@@ -1,11 +1,11 @@
 import React from 'react';
 import { useUserContext } from '../../contexts/UserContext';
-import Banner from '../banner';
-import Sidebar from '../sidebar';
-import Calculator from '../calculator';
 import { Route, Switch } from 'react-router-dom';
-import TrainingPlan from '../training';
-import UserProfile from '../user-profile';
+import Banner from '../Banner';
+import Sidebar from '../Sidebar';
+import Calculator from '../Calculator';
+import TrainingPlan from '../TrainingPlan';
+import UserProfile from '../UserProfile';
 import './styles.css';
 
 function Main() {

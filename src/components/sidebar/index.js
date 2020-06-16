@@ -4,7 +4,7 @@ import Title from './Title';
 import Navigation from './Navigation';
 import './styles.css';
 
-function Menu() {
+function Sidebar() {
   const { user } = useUserContext();
 
   return (
@@ -17,4 +17,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Sidebar;

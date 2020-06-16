@@ -1,8 +1,8 @@
 import React from 'react';
-import UserIcon from './UserIcon';
-import Signup from '../auth';
-import './styles.css';
 import { NavLink } from 'react-router-dom';
+import UserIcon from './UserIcon';
+import Signup from '../Signup';
+import './styles.css';
 
 function Header() {
   return (
