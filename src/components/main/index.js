@@ -6,6 +6,7 @@ import Sidebar from '../Sidebar';
 import Calculator from '../Calculator';
 import TrainingPlan from '../TrainingPlan';
 import UserProfile from '../UserProfile';
+import Title from '../Sidebar/Title';
 import './styles.css';
 
 function Main() {
@@ -24,7 +25,7 @@ function Main() {
               <Route path="/training" component={TrainingPlan} />
               <Route path="/zones" component={Calculator} />
               <Route path="/profile" component={UserProfile} />
-              <Route path="/home" component={Calculator} />
+              <Route path="/home" component={Title} />
             </Switch>
           }
         </div>
