@@ -1,0 +1,11 @@
+.zone-calculator__table {
+  margin-top: 20px;
+}
+
+tbody {
+  text-align: left;
+}
+
+form input {
+  display: block;
+}
