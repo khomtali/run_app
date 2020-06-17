@@ -1,6 +1,5 @@
 import React from 'react';
 import { useUserContext } from '../../contexts/UserContext';
-// import PropTypes from 'prop-types';
 
 function UserProfile(props) {
   const { user } = useUserContext();
@@ -8,12 +7,9 @@ function UserProfile(props) {
   return (
     <div>
       <h2>{user.authData.nickname}'s Profile</h2>
-      <p>Your age:{user.fields.age}</p>
+      <p>Your age:{user.age}</p>
     </div>
   );
 };
-
-// UserProfile.propTypes = {
-// };
 
 export default UserProfile;

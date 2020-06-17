@@ -1,21 +1,20 @@
 import React from 'react';
 import { useUserContext } from '../../contexts/UserContext';
 import Title from './Title';
-import Pages from './Pages';
-import Signup from '../auth/Signup';
+import Navigation from './Navigation';
+import './styles.css';
 
-function Menu() {
+function Sidebar() {
   const { user } = useUserContext();
 
   return (
-    <div className="menu">
+    <div className="sidebar">
       <Title />
       {user &&
-        <Pages />
+        <Navigation />
       }
-      <Signup />
     </div>
   );
 }
 
-export default Menu;
+export default Sidebar;
