@@ -8,6 +8,7 @@ main {
   max-width: 1200px;
   margin: auto;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .content {
