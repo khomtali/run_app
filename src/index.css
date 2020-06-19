@@ -13,8 +13,12 @@
 body {
   position: relative;
   min-width: 320px;
-  min-height: 100vh;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
   color: #555;
+}
+
+#root {
+  min-height: 100vh;
+  padding-bottom: 69px;
 }
