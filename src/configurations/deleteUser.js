@@ -1,12 +1,15 @@
-export const deleteUser = async () => {
+export const deleteUser = async (userToken) => {
   const response = await fetch(process.env.REACT_APP_BACKEND_URL + 'user', {
-    'method': 'DELETE'
+    'method': 'DELETE',
+    'headers': {
+      'authorization': `Bearer ${userToken}`
+    }
   });
 
   try {
-    const { status } = await response.json();
-    console.log(status);
-    if (status === 'success') console.log('user was deleted');
+    const result = await response.text();
+    console.log(result);
+    // if (status === 'success') console.log('user was deleted');
   } catch (err) {
     console.error(err);
   }

@@ -35,7 +35,7 @@ function UserProfile() {
 
   const handleDeleteClick = async event => {
     event.preventDefault();
-    deleteUser();
+    deleteUser(user.token);
     // logout(); commented to see errors of deleteUser();
   };
 
