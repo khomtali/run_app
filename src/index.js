@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import UserProvider from './components/Signup/UserProvider';
-import App from './App';
+import LoadingApp from './components/LoadingApp';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
@@ -10,7 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <App />
+        <LoadingApp />
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>,
