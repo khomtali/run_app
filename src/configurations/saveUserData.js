@@ -9,13 +9,15 @@ export const saveUserData = async (user, data) => {
       id: user.auth0_id,
       fields: {
         age: data.userAge,
-        resting_heart_rate: data.restRate
+        resting_heart_rate: data.restRate,
+        name: data.userName,
+        nickname: data.userNickname
       }
     })
   });
   try {
     const { status } = await response.json();
-    if (status === 'success') console.log('data successfully saved');
+    if (status === 'success') return 1;
   } catch (err) {
     console.error(err);
   }

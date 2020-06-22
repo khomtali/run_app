@@ -5,10 +5,10 @@ main {
 .content-container {
   display: flex;
   align-items: flex-start;
-  min-height: 80vh;
   max-width: 1200px;
   margin: auto;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .content {
@@ -17,4 +17,3 @@ main {
   width: 70vw;
   padding-left: 50px;
 }
-  

@@ -1,11 +1,15 @@
 footer {
-  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  padding: 25px;
   background-color: #2b2b2b;
 }
 
 .footer__inner {
   margin: auto;
-  padding: 15px;
   max-width: 1200px;
   text-align: right;
+  color: #999;
 }
