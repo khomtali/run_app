@@ -20,7 +20,10 @@ function Main() {
         <Sidebar />
         <div className="content">
           {!user ?
-            <Calculator />
+            <>
+              <Homepage />
+              <Calculator />
+            </>
             :
             <Switch>
               <Route path="/training" component={TrainingPlan} />
