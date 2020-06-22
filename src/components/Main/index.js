@@ -1,6 +1,7 @@
 import React from 'react';
-import { useUserContext } from '../../contexts/UserContext';
 import { Route, Switch } from 'react-router-dom';
+
+import { useUserContext } from '../../contexts/UserContext';
 import Banner from '../Banner';
 import Sidebar from '../Sidebar';
 import Calculator from '../Calculator';
