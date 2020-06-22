@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import UserIcon from './UserIcon';
 import Signup from '../Signup';
 import './styles.css';

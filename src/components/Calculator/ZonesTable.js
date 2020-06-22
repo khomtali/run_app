@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import ZoneRow from './ZoneRow';
 import zonesDescription from '../../configurations/constants';
 

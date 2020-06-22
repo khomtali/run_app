@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+
 import UserProvider from './components/Signup/UserProvider';
 import LoadingApp from './components/LoadingApp';
 import './index.css';

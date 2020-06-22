@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { UserContext } from '../../contexts/UserContext';
 import { trackPromise } from 'react-promise-tracker';
+
+import { UserContext } from '../../contexts/UserContext';
 import { authFlow } from '../../configurations/auth';
 
 function UserProvider(props) {
