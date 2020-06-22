@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-import CalculatorInput from './CalculatorInput';
+import ZonesInput from './ZonesInput';
 import ZonesTable from './ZonesTable';
+import ZonesInfo from './ZonesInfo';
 import ZoneDataModel from '../../models/ZoneDataModel';
 import './styles.css';
 
-function Calculator() {
+function Zones() {
   const [zones, setZones] = useState([]);
 
   const handleSubmit = form => {
@@ -14,11 +15,15 @@ function Calculator() {
   };
 
   return (
-    <div className="zone-calculator">
-      <CalculatorInput onSubmit={handleSubmit} />
-      <ZonesTable output={zones} />
+    <div className="content__zones">
+      {!zones.length ?
+        <ZonesInput onSubmit={handleSubmit} />
+        :
+        <ZonesTable output={zones} />
+      }
+      <ZonesInfo />
     </div>
   );
 }
 
-export default Calculator;
+export default Zones;

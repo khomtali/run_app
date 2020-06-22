@@ -15,7 +15,7 @@
   margin-top: 5px;
 }
 
-.content__profile__input-form button {
+.content__profile__input-form__button {
   width: 110px;
   height: 40px;
   border: 2px solid #4bd0a0;
@@ -25,12 +25,12 @@
   background-color: #4bd0a0;
 }
 
-.content__profile__input-form p {
-  margin-bottom: 0;
+.content__profile__input-form__button:hover {
+  cursor: pointer;
 }
 
-.content__profile button:hover {
-  cursor: pointer;
+.content__profile__input-form p {
+  margin-bottom: 0;
 }
 
 .content__profile__form-divider {

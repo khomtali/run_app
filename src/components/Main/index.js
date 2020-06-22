@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import { useUserContext } from '../../contexts/UserContext';
 import Banner from '../Banner';
 import Sidebar from '../Sidebar';
-import Calculator from '../Calculator';
+import Zones from '../Zones';
 import TrainingPlan from '../TrainingPlan';
 import UserProfile from '../UserProfile';
 import Title from '../Sidebar/Title';
@@ -20,11 +20,11 @@ function Main() {
         <Sidebar />
         <div className="content">
           {!user ?
-            <Calculator />
+            <Zones />
             :
             <Switch>
               <Route path="/training" component={TrainingPlan} />
-              <Route path="/zones" component={Calculator} />
+              <Route path="/zones" component={Zones} />
               <Route path="/profile" component={UserProfile} />
               <Route path="/home" component={Title} />
             </Switch>

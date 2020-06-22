@@ -21,17 +21,21 @@ function CalculatorInput(props) {
   };
 
   return (
-    <div className="zone-calculator__input-form">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="age">Age</label>
+    <form onSubmit={handleSubmit} className="content__zones__input-form">
+      <div className="content__zones__input-form__block">
+        <label htmlFor="userAge">Age</label>
         <input type="number" min="0" max="100" name="userAge" id="userAge" required
           value={form.userAge} onChange={handleChange} />
-        <label htmlFor="resting-heart-rate">Resting heart rate</label>
+      </div>
+      <div className="content__zones__input-form__block">
+        <label htmlFor="restRate">Resting heart rate</label>
         <input type="number" min="0" max="200" name="restRate" id="restRate" required
           value={form.restRate} onChange={handleChange} />
-        <button>Calculate</button>
-      </form>
-    </div>
+      </div>
+      <div>
+        <button className="content__zones__input-form__button">Calculate</button>
+      </div>
+    </form>
   );
 }
 
