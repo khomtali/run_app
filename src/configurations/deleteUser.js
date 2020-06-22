@@ -7,9 +7,8 @@ export const deleteUser = async (userToken) => {
   });
 
   try {
-    const result = await response.text();
-    console.log(result);
-    // if (status === 'success') console.log('user was deleted');
+    const { status } = await response.json();
+    if (status === 'success') return 1;
   } catch (err) {
     console.error(err);
   }
