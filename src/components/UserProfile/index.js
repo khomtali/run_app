@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useUserContext } from '../../contexts/UserContext';
-import { saveUserData, updateUserData } from '../../configurations/saveUserData';
+import { saveUserData } from '../../configurations/saveUserData';
 import { deleteUser } from '../../configurations/deleteUser';
-// import { logout } from '../../configurations/auth';
+import { logout } from '../../configurations/auth';
 import './styles.css';
 
 function UserProfile() {
@@ -25,7 +25,6 @@ function UserProfile() {
   const handleSubmit = async event => {
     event.preventDefault();
     const isSaved = await saveUserData(user, form);
-    updateUserData(user, form);
     if (isSaved) setStatus('* Your data was saved successfully');
     else {
       setStatus('* Your data was not saved. Please try again later');
@@ -36,7 +35,7 @@ function UserProfile() {
   const handleDeleteClick = async event => {
     event.preventDefault();
     deleteUser(user.token);
-    // logout(); commented to see errors of deleteUser();
+    logout();
   };
 
   return (
