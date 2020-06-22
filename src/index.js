@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import UserProvider from './components/Signup/UserProvider';
+
 import App from './App';
+import UserProvider from './components/Signup/UserProvider';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
