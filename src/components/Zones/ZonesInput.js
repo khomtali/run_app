@@ -13,6 +13,7 @@ function CalculatorInput(props) {
     const { name, value } = event.target;
     setForm(prevForm => ({ ...prevForm, [name]: value }));
   };
+  
   const handleSubmit = event => {
     event.preventDefault();
     props.onSubmit(form);

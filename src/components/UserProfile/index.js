@@ -9,8 +9,8 @@ import './styles.css';
 function UserProfile() {
   const { user } = useUserContext();
   const initialState = {
-    userName: user.authData.name,
-    userNickname: user.authData.nickname,
+    userName: user.authData.name || '',
+    userNickname: user.authData.nickname || '',
     userAge: user.age || '',
     restRate: user.resting_heart_rate || ''
   };

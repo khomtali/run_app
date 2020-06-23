@@ -9,6 +9,7 @@ function Signup() {
   const handleSignupClick = async () => {
     login();
   };
+  
   const handleLogoutClick = async () => {
     logout();
   };
