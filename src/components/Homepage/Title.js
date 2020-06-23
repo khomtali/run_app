@@ -7,10 +7,10 @@ function Title() {
 
   return (
     <>
-      {!user ?
-        <h2>Welcome to ReDI-Run-App!</h2>
-        :
+      {user ?
         <h2>Welcome, {user.authData.name}!</h2>
+        :
+        <h2>Welcome to ReDI-Run-App!</h2>
       }
     </>
   );
