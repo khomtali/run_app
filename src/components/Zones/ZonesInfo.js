@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ZoneButton from './ZoneButton';
 import { zoneDescriptions } from '../../configurations/constants';
+import ZoneButton from './ZoneButton';
 
 function ZonesInfo() {
   return (

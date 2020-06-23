@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ZoneRow from './ZoneRow';
 import { zoneTableInfos } from '../../configurations/constants';
+import ZoneRow from './ZoneRow';
 
 function ZonesTable(props) {
   let zones = props.output;
