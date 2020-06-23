@@ -10,7 +10,7 @@ function Header() {
     <header className="header">
       <div className="header__inner">
         <div className="header__inner__logo">
-          <NavLink to="/home" className="header__inner__logo__link">ReDI-RUN-App</NavLink>
+          <NavLink to="/" className="header__inner__logo__link">ReDI-RUN-App</NavLink>
         </div>
         <div className="header__inner__account">
           <UserIcon />

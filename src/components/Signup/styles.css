@@ -1,0 +1,22 @@
+.auth-button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-button:hover {
+  color: #4bd0a0;
+}
+
+.auth-button::before {
+  padding-right: 10px;
+}
+
+.login::before {
+  content: '\F02C';
+  font-family: fontello;
+}
+
+.logout::before {
+  content: '\F02D';
+  font-family: fontello;
+}

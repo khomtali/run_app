@@ -7,7 +7,7 @@ import Sidebar from '../Sidebar';
 import Calculator from '../Calculator';
 import TrainingPlan from '../TrainingPlan';
 import UserProfile from '../UserProfile';
-import Title from '../Sidebar/Title';
+import Homepage from '../Homepage/';
 import './styles.css';
 
 function Main() {
@@ -20,13 +20,16 @@ function Main() {
         <Sidebar />
         <div className="content">
           {!user ?
-            <Calculator />
+            <>
+              <Homepage />
+              <Calculator />
+            </>
             :
             <Switch>
               <Route path="/training" component={TrainingPlan} />
               <Route path="/zones" component={Calculator} />
               <Route path="/profile" component={UserProfile} />
-              <Route path="/home" component={Title} />
+              <Route path="/" component={Homepage} />
             </Switch>
           }
         </div>
