@@ -19,15 +19,15 @@ function Main() {
       <div className="content-container">
         <Sidebar />
         <div className="content">
-          {!user ?
-            <Zones />
-            :
+          {user ?
             <Switch>
               <Route path="/training" component={TrainingPlan} />
               <Route path="/zones" component={Zones} />
               <Route path="/profile" component={UserProfile} />
               <Route path="/home" component={Title} />
             </Switch>
+            :
+            <Zones />
           }
         </div>
       </div>

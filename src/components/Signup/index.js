@@ -15,10 +15,10 @@ function Signup() {
 
   return (
     <>
-      {!user ?
-        <div className="login" onClick={handleSignupClick}>Signup or Login</div>
-        :
+      {user ?
         <div className="logout" onClick={handleLogoutClick}>Logout</div>
+        :
+        <div className="login" onClick={handleSignupClick}>Signup or Login</div>
       }
     </>
   );
