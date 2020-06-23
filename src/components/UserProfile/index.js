@@ -9,14 +9,23 @@ import './styles.css';
 function UserProfile() {
   const { user } = useUserContext();
   const initialState = {
-    userName: user.authData.name,
-    userNickname: user.authData.nickname,
-    userAge: user.age || '',
-    restRate: user.resting_heart_rate || ''
+    userName: user ? user.authData.name : '',
+    userNickname: user ? user.authData.nickname : '',
+    userAge: user ? user.age : '',
+    restRate: user? user.resting_heart_rate : ''
   };
   const [form, setForm] = useState(initialState);
   let [savStatus, setSavStatus] = useState();
   let [delStatus, setDelStatus] = useState();
+
+  if (!user) {
+    return (
+      <>
+        <h2>My Profile</h2>
+        <p>you must create an account to use the feature</p>
+      </>
+    );
+  }
 
   const handleChange = event => {
     const { name, value } = event.target;

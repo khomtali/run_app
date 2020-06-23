@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { useUserContext } from '../../contexts/UserContext';
 import ZonesInput from './ZonesInput';
@@ -10,21 +10,19 @@ import './styles.css';
 function Zones() {
   const { user } = useUserContext();
   const [zones, setZones] = useState([]);
-  const userAge = 0;
 
-  if (user) {
-    const userAge = user.age;
-  }
-  console.log(userAge);
-  // if (user.age && user.resting_heart_rate) {
-  //   const userInput = new ZoneDataModel({ userAge: user.age, restRate: user.resting_heart_rate });
-  //   setZones(userInput.calculateZones);
-  // }
+  useEffect(() => {
+    if (user && user.age && user.resting_heart_rate) {
+      const userInput = new ZoneDataModel({ userAge: user.age, restRate: user.resting_heart_rate });
+      setZones(userInput.calculateZones);
+    }
+  }, [user]);
 
   const handleCalcSubmit = form => {
     const userInput = new ZoneDataModel(form);
     setZones(userInput.calculateZones);
   };
+
   const handleRecalcSubmit = () => {
     setZones([]);
   };
