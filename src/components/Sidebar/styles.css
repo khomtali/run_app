@@ -29,6 +29,11 @@
   padding-right: 10px;
 }
 
+.navigation__link.home::before {
+  content: '\F085';
+  font-family: fontello;
+}
+
 .navigation__link.training::before {
   content: '\F4C5';
   font-family: fontello;
