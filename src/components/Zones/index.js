@@ -9,17 +9,20 @@ import './styles.css';
 function Zones() {
   const [zones, setZones] = useState([]);
 
-  const handleSubmit = form => {
+  const handleCalcSubmit = form => {
     const userInput = new ZoneDataModel(form);
     setZones(userInput.calculateZones);
+  };
+  const handleRecalcSubmit = () => {
+    setZones([]);
   };
 
   return (
     <div className="content__zones">
       {!zones.length ?
-        <ZonesInput onSubmit={handleSubmit} />
+        <ZonesInput onSubmit={handleCalcSubmit} />
         :
-        <ZonesTable output={zones} />
+        <ZonesTable output={zones} onSubmit={handleRecalcSubmit} />
       }
       <ZonesInfo />
     </div>

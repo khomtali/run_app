@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ZoneRow from './ZoneRow';
-import zonesDescription from '../../configurations/constants';
+import { zoneTableInfos } from '../../configurations/constants';
 
 function ZonesTable(props) {
-  const zones = props.output;
+  let zones = props.output;
 
   const handleSubmit = event => {
     event.preventDefault();
+    props.onSubmit(zones);
   };
 
   return (
@@ -22,20 +23,21 @@ function ZonesTable(props) {
           </tr>
         </thead>
         <tbody>
-          {zones.map((element, index) =>
-            <ZoneRow key={index} range={element} description={zonesDescription[index]} />
+          {zones.map((zone, index) =>
+            <ZoneRow key={index} range={zone} description={zoneTableInfos[index]} />
           )}
         </tbody>
       </table>
       <form onSubmit={handleSubmit}>
-        <button>Recalculate</button>
+        <button className="content__zones__input-form__button">Recalculate</button>
       </form>
     </div>
   );
 }
 
 ZonesTable.propTypes = {
-  output: PropTypes.array.isRequired
+  output: PropTypes.array.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default ZonesTable;
