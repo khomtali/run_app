@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 function ZoneRow(props) {
   return (
     <tr>
-      <th>{props.range.join(' - ')}</th>
-      <th>{props.description.effort}</th>
-      <th>{props.description.effect}</th>
+      <td className="range">{props.range.join(' - ')}</td>
+      <td>{props.description.effort}</td>
+      <td>{props.description.effect}</td>
     </tr>
   );
 }

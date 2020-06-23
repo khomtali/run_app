@@ -13,7 +13,7 @@ function ZonesTable(props) {
   };
 
   return (
-    <div className="content__zones__table">
+    <div>
       <table>
         <thead>
           <tr key="0">
