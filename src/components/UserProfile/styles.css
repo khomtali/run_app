@@ -9,6 +9,7 @@
 }
 
 .content__profile__input-form__block input {
+  display: block;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
   color: #555;
