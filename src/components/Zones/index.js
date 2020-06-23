@@ -13,8 +13,8 @@ function Zones() {
 
   useEffect(() => {
     if (user && user.age && user.resting_heart_rate) {
-      const userInput = new ZoneDataModel({ userAge: user.age, restRate: user.resting_heart_rate });
-      setZones(userInput.calculateZones);
+      const userData = new ZoneDataModel({ userAge: user.age, restRate: user.resting_heart_rate });
+      setZones(userData.calculateZones);
     }
   }, [user]);
 
