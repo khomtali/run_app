@@ -8,7 +8,7 @@ function UserIcon() {
   return (
     <>
       {user &&
-        <img src={user.authData.picture} alt="user icon" className="header__account__icon" />
+        <img src={user.authData.picture} alt="user icon" className="header__inner__account__icon" />
       }
     </>
   );

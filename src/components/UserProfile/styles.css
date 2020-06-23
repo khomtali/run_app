@@ -1,3 +1,7 @@
+.content__profile h2 {
+  margin-top: 0;
+}
+
 .content__profile__input-form {
   display: flex;
   flex-wrap: wrap;

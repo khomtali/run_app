@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useUserContext } from '../../contexts/UserContext';
-import Title from './Title';
+import Signup from '../Signup';
 import Navigation from './Navigation';
 import './styles.css';
 
@@ -10,8 +10,12 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <Title />
-      {user &&
+      {!user ?
+        <>
+          <p>To configure personal training plan please sign up or log in.</p>
+          <Signup />
+        </>
+        :
         <Navigation />
       }
     </div>
