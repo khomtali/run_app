@@ -9,8 +9,8 @@ import './styles.css';
 function UserProfile() {
   const { user } = useUserContext();
   const initialState = {
-    userName: user.authData.name,
-    userNickname: user.authData.nickname,
+    userName: user.authData.name || '',
+    userNickname: user.authData.nickname || '',
     userAge: user.age || '',
     restRate: user.resting_heart_rate || ''
   };
@@ -66,8 +66,8 @@ function UserProfile() {
           <input type="number" min="0" max="200" name="restRate" id="restRate" required
             value={form.restRate} onChange={handleChange} />
         </div>
-        <div className="content__profile__input-form__button">
-          <button>Save data</button>
+        <div>
+          <button className="content__profile__input-form__button">Save data</button>
           <p>{savStatus}</p>
         </div>
       </form>

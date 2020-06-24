@@ -10,16 +10,17 @@ function Signup() {
   const handleSignupClick = async () => {
     login();
   };
+  
   const handleLogoutClick = async () => {
     logout();
   };
 
   return (
     <>
-      {!user ?
-        <div className="auth-button login" onClick={handleSignupClick}>Signup or Login</div>
-        :
+      {user ?
         <div className="auth-button logout" onClick={handleLogoutClick}>Logout</div>
+        :
+        <div className="auth-button login" onClick={handleSignupClick}>Signup or Login</div>
       }
     </>
   );
