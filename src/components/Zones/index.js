@@ -29,6 +29,7 @@ function Zones() {
 
   return (
     <div className="content__zones">
+      <h2>Heart Rate Zones</h2>
       {!zones.length ?
         <ZonesInput onSubmit={handleCalcSubmit} />
         :

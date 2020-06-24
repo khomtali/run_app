@@ -1,3 +1,7 @@
+.content__zones h2 {
+  margin-top: 0;
+}
+
 .content__zones__input-form {
   display: flex;
   flex-wrap: wrap;
