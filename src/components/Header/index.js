@@ -5,7 +5,7 @@ import UserIcon from './UserIcon';
 import Signup from '../Signup';
 import './styles.css';
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
       <div className="header__inner">
@@ -19,6 +19,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

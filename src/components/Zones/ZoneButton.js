@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ZoneButton(props) {
+const ZoneButton = ({ number, description }) => {
   const handleClick = event => {
     event.preventDefault();
     event.target.classList.toggle('active-zone');
@@ -12,13 +12,13 @@ function ZoneButton(props) {
 
   return (
     <div>
-      <button type="button" onClick={handleClick} className="collapsible">{props.number}</button>
+      <button type="button" onClick={handleClick} className="collapsible">{number}</button>
       <div className="content__zones__info__details">
-        <p>{props.description}</p>
+        <p>{description}</p>
       </div>
     </div>
   );
-}
+};
 
 ZoneButton.propTypes = {
   number: PropTypes.string.isRequired,

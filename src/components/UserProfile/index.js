@@ -6,7 +6,7 @@ import { deleteUser } from '../../configurations/deleteUser';
 import { logout } from '../../configurations/auth';
 import './styles.css';
 
-function UserProfile() {
+const UserProfile = () => {
   const { user } = useUserContext();
   const initialState = {
     userName: user.authData.name || '',
@@ -20,7 +20,10 @@ function UserProfile() {
 
   const handleChange = event => {
     const { name, value } = event.target;
-    setForm(prevForm => ({ ...prevForm, [name]: value }));
+    setForm({
+      ...form,
+      [name]: value
+    });
     setSavStatus('');
     setDelStatus('');
   };

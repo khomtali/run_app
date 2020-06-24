@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useUserContext } from '../../contexts/UserContext';
 
-function Title() {
+const Title = () => {
   const { user } = useUserContext();
 
   return (
@@ -14,6 +14,6 @@ function Title() {
       }
     </>
   );
-}
+};
 
 export default Title;

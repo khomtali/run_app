@@ -3,7 +3,7 @@ import React from 'react';
 import { zoneDescriptions } from '../../configurations/constants';
 import ZoneButton from './ZoneButton';
 
-function ZonesInfo() {
+const ZonesInfo = () => {
   return (
     <div className="content__zones__info">
       <h3>Getting to know your zones</h3>
@@ -16,6 +16,6 @@ function ZonesInfo() {
       )}
     </div>
   );
-}
+};
 
 export default ZonesInfo;

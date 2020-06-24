@@ -4,7 +4,7 @@ import { useUserContext } from '../../contexts/UserContext';
 import { login, logout } from '../../configurations/auth';
 import './styles.css';
 
-function Signup() {
+const Signup = () => {
   const { user } = useUserContext();
 
   const handleSignupClick = async () => {
@@ -24,6 +24,6 @@ function Signup() {
       }
     </>
   );
-}
+};
 
 export default Signup;

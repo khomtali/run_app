@@ -1,7 +1,6 @@
 import React from 'react';
 
-function AppDescription() {
-
+const AppDescription = () => {
   return (
     <div className="content__home__description">
       <p>
@@ -14,7 +13,7 @@ function AppDescription() {
         how training at the right intensity affects your running performance.
       </p>
     </div>
-  )
-}
+  );
+};
 
 export default AppDescription;
