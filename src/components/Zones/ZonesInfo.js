@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { zoneDescriptions } from '../../configurations/constants';
-import ZoneButton from './ZoneButton';
+import Collapsible from '../common/Collapsible';
 
 const ZonesInfo = () => {
   return (
@@ -12,7 +12,7 @@ const ZonesInfo = () => {
         pushing too hard in workouts that are supposed to be done at low intensity (Zones 1 and 2).
       </p>
       {zoneDescriptions.map((zone, index) =>
-        <ZoneButton key={index} number={zone.number} description={zone.description} />
+        <Collapsible key={index} name={zone.number} description={zone.description} />
       )}
     </div>
   );
