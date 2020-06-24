@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useUserContext } from '../../contexts/UserContext';
 import { saveUserData } from '../../configurations/saveUserData';
 
-function CalculatorInput(props) {
+function ZonesInput(props) {
   const initialState = { userAge: '', restRate: '' };
   const [form, setForm] = useState(initialState);
   const { user } = useUserContext();
@@ -40,8 +40,8 @@ function CalculatorInput(props) {
   );
 }
 
-CalculatorInput.propTypes = {
+ZonesInput.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
 
-export default CalculatorInput;
+export default ZonesInput;
