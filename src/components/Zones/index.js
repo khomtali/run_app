@@ -7,7 +7,7 @@ import ZonesInfo from './ZonesInfo';
 import ZoneDataModel from '../../models/ZoneDataModel';
 import './styles.css';
 
-function Zones() {
+const Zones = () => {
   const { user } = useUserContext();
   const [zones, setZones] = useState([]);
 
@@ -33,11 +33,11 @@ function Zones() {
       {!zones.length ?
         <ZonesInput onSubmit={handleCalcSubmit} />
         :
-        <ZonesTable output={zones} onSubmit={handleRecalcSubmit} />
+        <ZonesTable zones={zones} onSubmit={handleRecalcSubmit} />
       }
       <ZonesInfo />
     </div>
   );
-}
+};
 
 export default Zones;

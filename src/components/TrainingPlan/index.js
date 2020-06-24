@@ -3,9 +3,8 @@ import React from 'react';
 import TrainingPlanInput from './TrainingPlanInput';
 import './styles.css';
 
-function TrainingPlan() {
+const TrainingPlan = () => {
   const handleConfigSubmit = form => {
-    console.log('configuration');
     console.log(form);
   };
 
@@ -16,6 +15,6 @@ function TrainingPlan() {
       <TrainingPlanInput onSubmit={handleConfigSubmit} />
     </div>
   );
-}
+};
 
 export default TrainingPlan;

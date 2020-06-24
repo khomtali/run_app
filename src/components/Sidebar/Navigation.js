@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Navigation() {
+const Navigation = () => {
   const activeStyle = {
     color: '#4bd0a0'
   };
@@ -32,6 +32,6 @@ function Navigation() {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navigation;

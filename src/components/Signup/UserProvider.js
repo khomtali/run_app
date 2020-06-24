@@ -4,7 +4,7 @@ import { trackPromise } from 'react-promise-tracker';
 import { UserContext } from '../../contexts/UserContext';
 import { authFlow } from '../../configurations/auth';
 
-function UserProvider(props) {
+const UserProvider = ({ children }) => {
   // ref: https://stackoverflow.com/questions/58197800/set-the-data-in-react-context-from-asynchronous-api-call
   const [user, setUser] = useState();
 
@@ -19,9 +19,9 @@ function UserProvider(props) {
 
   return (
     <UserContext.Provider value={{ user }}>
-      {props.children}
+      {children}
     </UserContext.Provider>
   );
-}
+};
 
 export default UserProvider;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-function Banner() {
+const Banner = () => {
   return (
     <div className="banner-container">
       <span className="banner-container__author"><i>photo by
@@ -10,6 +10,6 @@ function Banner() {
       </i></span>
     </div>
   );
-}
+};
 
 export default Banner;

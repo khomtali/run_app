@@ -3,17 +3,20 @@ import PropTypes from 'prop-types';
 
 import { getTrainingTables } from '../../configurations/getTrainingTables';
 
-function TrainingPlanInput(props) {
+const TrainingPlanInput = ({ onSubmit }) => {
   const [form, setForm] = useState({ level: '1', distance: '5 km'});
 
   const handleChange = event => {
     const { name, value } = event.target;
-    setForm(prevForm => ({ ...prevForm, [name]: value }));
+    setForm({
+      ...form,
+      [name]: value
+    });
   };
 
   const handleSubmit = event => {
     event.preventDefault();
-    props.onSubmit(form);
+    onSubmit(form);
     getTrainingTables();
   };
 
@@ -41,7 +44,7 @@ function TrainingPlanInput(props) {
       </div>
     </form>
   );
-}
+};
 
 TrainingPlanInput.propTypes = {
   onSubmit: PropTypes.func.isRequired,

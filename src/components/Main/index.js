@@ -10,7 +10,7 @@ import UserProfile from '../UserProfile';
 import Homepage from '../Homepage/';
 import './styles.css';
 
-function Main() {
+const Main = () => {
   const { user } = useUserContext();
 
   return (
@@ -37,6 +37,6 @@ function Main() {
       </div>
     </main>
   );
-}
+};
 
 export default Main;

@@ -4,12 +4,10 @@ import PropTypes from 'prop-types';
 import { zoneTableInfos } from '../../configurations/constants';
 import ZoneRow from './ZoneRow';
 
-function ZonesTable(props) {
-  let zones = props.output;
-
+const ZonesTable = ({ zones, onSubmit }) => {
   const handleSubmit = event => {
     event.preventDefault();
-    props.onSubmit(zones);
+    onSubmit(zones);
   };
 
   return (
@@ -33,10 +31,10 @@ function ZonesTable(props) {
       </form>
     </div>
   );
-}
+};
 
 ZonesTable.propTypes = {
-  output: PropTypes.array.isRequired,
+  zones: PropTypes.array.isRequired,
   onSubmit: PropTypes.func.isRequired,
 };
 

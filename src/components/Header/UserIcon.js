@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useUserContext } from '../../contexts/UserContext';
 
-function UserIcon() {
+const UserIcon = () => {
   const { user } = useUserContext();
 
   return (
@@ -12,6 +12,6 @@ function UserIcon() {
       }
     </>
   );
-}
+};
 
 export default UserIcon;

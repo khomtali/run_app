@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-function Footer() {
+const Footer = () => {
   return (
     <footer>
       <div className="footer__inner">
@@ -10,6 +10,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
