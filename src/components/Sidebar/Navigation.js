@@ -10,6 +10,11 @@ function Navigation() {
     <nav className="navigation">
       <ul>
         <li>
+          <NavLink to="/home" activeStyle={activeStyle} className="navigation__link home">
+            Home
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/training" activeStyle={activeStyle} className="navigation__link training">
             Training plan
           </NavLink>
