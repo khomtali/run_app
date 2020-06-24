@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import TrainingPlanInput from './TrainingPlanInput';
 import './styles.css';
@@ -11,7 +12,7 @@ const TrainingPlan = () => {
   return (
     <div className="content__training">
       <h2>Training Plan</h2>
-      <p>Feature coming soon!</p>
+      <p><Link to="/training/info">Trainings description</Link></p>
       <TrainingPlanInput onSubmit={handleConfigSubmit} />
     </div>
   );
