@@ -24,6 +24,7 @@ function Main() {
               <Route path="/training" component={TrainingPlan} />
               <Route path="/zones" component={Zones} />
               <Route path="/profile" component={UserProfile} />
+              <Route path="/home" component={Homepage} />
               <Route path="/" component={Homepage} />
             </Switch>
             :
