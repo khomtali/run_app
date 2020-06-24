@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import { getTrainingTables } from '../../configurations/getTrainingTables';
+
 function TrainingPlanInput(props) {
   const [form, setForm] = useState({ level: '1', distance: '5 km'});
 
@@ -12,6 +14,7 @@ function TrainingPlanInput(props) {
   const handleSubmit = event => {
     event.preventDefault();
     props.onSubmit(form);
+    getTrainingTables();
   };
 
   return (
