@@ -47,7 +47,7 @@ const UserProfile = () => {
 
   return (
     <div className="content__profile">
-      <h2>My Profile</h2>
+      <h2>User Profile</h2>
       <form onSubmit={handleSubmit} className="content__profile__input-form">
         <div className="content__profile__input-form__block">
           <label htmlFor="userName">Name</label>

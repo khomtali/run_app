@@ -1,15 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Collapsible from '../common/Collapsible';
+import { trainingDescriptions } from '../../configurations/constants';
 
-const TrainingInfo = ({ data }) => {
+const TrainingInfo = () => {
   return (
     <div className="content__training">
-      <h2>Trainings Description</h2>
-      {data.map(index =>
+      <h2>Training Descriptions</h2>
+      <p><Link to="/training" className="back-link">Back</Link></p>
+      {trainingDescriptions.map((training, index) =>
         <Collapsible key={index}
-          name={data.fields.trainingType}
-          description={data.fields.description}
+          name={training.trainingType}
+          description={training.description}
         />
       )}
     </div>
