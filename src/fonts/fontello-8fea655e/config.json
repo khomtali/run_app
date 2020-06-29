@@ -31,15 +31,39 @@
       "src": "mfglabs"
     },
     {
-      "uid": "15ba51cbb4d05e6fb88f03a31a7c711c",
-      "css": "info-circled-alt",
-      "code": 61574,
-      "src": "mfglabs"
-    },
-    {
       "uid": "8f25d96c5665c84e4403538eef14ec2c",
       "css": "info-circled",
       "code": 61573,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "c21d309f797d3644dc8d28c4617738ce",
+      "css": "left",
+      "code": 59392,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "e5fdc4247f1f9b3bf98d20a954e1327c",
+      "css": "user-male",
+      "code": 61538,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "44eb9d69bf3b9b74629ce6852a2f9681",
+      "css": "cancel-circled",
+      "code": 61550,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "5e1ef647438e2204c15197c6efc4151e",
+      "css": "ok-circled",
+      "code": 61549,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "15ba51cbb4d05e6fb88f03a31a7c711c",
+      "css": "info-circled-alt",
+      "code": 61574,
       "src": "mfglabs"
     }
   ]

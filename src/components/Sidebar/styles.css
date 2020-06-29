@@ -45,6 +45,6 @@
 }
 
 .navigation__link.profile::before {
-  content: '\F085';
+  content: '\F062';
   font-family: fontello;
 }
