@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Collapsible from '../common/Collapsible';
 import { trainingDescriptions } from '../../configurations/constants';
+import TabHeader from '../common/TabHeader';
+import Collapsible from '../common/Collapsible';
+import './styles.css';
 
 const TrainingInfo = () => {
   return (
     <div className="content__training">
-      <h2>Training Descriptions</h2>
+      <TabHeader header="Training Descriptions" />
       <p><Link to="/training" className="back-link">Back</Link></p>
       {trainingDescriptions.map((training, index) =>
         <Collapsible key={index}
