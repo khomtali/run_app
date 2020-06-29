@@ -16,7 +16,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/training" activeStyle={activeStyle} className="navigation__link training">
-            Training plan
+            Training Plan
           </NavLink>
         </li>
         <li>

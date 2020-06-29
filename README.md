@@ -14,6 +14,22 @@ App to configure your personal running plan and track its completeness. Calculat
 
 ![screen shot](docs/sitemap.png)
 
+- Homepage:
+
+![screen shot](docs/homepage.png)
+
+- User Profile Page:
+
+![screen shot](docs/profile.png)
+
+- HR Zones Calculator Page:
+
+![screen shot](docs/zones_calculator.png)
+
+- Training Plan Page:
+
+![screen shot](docs/training_plan.png)
+
 ## Features:
 
 - Calculation of approximate heart rate zones
@@ -26,10 +42,11 @@ App to configure your personal running plan and track its completeness. Calculat
    - with HTTPS `git clone https://github.com/redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
    - with SSH `git clone git@github.com:redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
 1. Go to the project directory `cd js_sprint_2020_final_project_khomtali`
-1. Create .env file with a constant `REACT_APP_BACKEND_URL=https://redi.travisshears.xyz/api/run/v1/`
+1. Create .env file with a constant `REACT_APP_BACKEND_URL=https://apps-v2.travisshears.xyz/run-app/v1/`
 1. Then run `npm install` and wait for installing all modules
 1. Run `npm start` and enjoy :)
 
 ---
 
-*[create-react-app README.md](docs/React_README.md)*
+*App is built as single-page-application using ReactJS.*
+*For more information about `create-react-app` please refer to [README.md](docs/React_README.md).*
