@@ -1,6 +1,5 @@
+import { backendURL } from './constants';
 let auth0;
-
-const backendURL = process.env.REACT_APP_BACKEND_URL;
 
 export const configureClient = async () => {
   if (typeof auth0 !== 'undefined') {
