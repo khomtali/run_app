@@ -43,3 +43,5 @@ export const zoneDescriptions = [
     description: 'Zone 5 is almost always used in interval workouts similar to the one given as an example earlier in this article. This intensity zone ranges from the highest speed you can sustain for a few minutes all the way to a full sprint. So how fast should you actually run Zone 5 efforts? Tailor your pace to the specific format of the workout. The rule of thumb here is to run closer to the bottom end of Zone 5 when these efforts are longer and to run closer to the top end when the intervals are shorter. For example, if a workout asks you to run a bunch of 90-second intervals in Zone 5, you’ll want to control your pace so that you are able to run all of the intervals at the same speed without slowing down. But if a workout prescribes a set of 20-second intervals, you’ll want to run them as relaxed sprints.'
   },
 ];
+
+export const backendURL = 'https://apps-v2.travisshears.xyz/run-app/v1/';

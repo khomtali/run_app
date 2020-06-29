@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import FormButton from '../common/FormButton';
+
 const TrainingPlanInput = ({ onSubmit }) => {
-  const [form, setForm] = useState({ level: '1', distance: '5 km'});
+  const [form, setForm] = useState({ level: '1', distance: '5 km' });
 
   const handleChange = event => {
     const { name, value } = event.target;
@@ -18,8 +20,8 @@ const TrainingPlanInput = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="content__training__input-form">
-      <div className="content__training__input-form__block">
+    <form onSubmit={handleSubmit} className="input-form">
+      <div className="input-form__block">
         <label htmlFor="level">Level</label>
         <select name="level" id="level" required onChange={handleChange}>
           <option>1</option>
@@ -27,7 +29,7 @@ const TrainingPlanInput = ({ onSubmit }) => {
           <option>3</option>
         </select>
       </div>
-      <div className="content__training__input-form__block">
+      <div className="input-form__block">
         <label htmlFor="distance">Plan distance</label>
         <select name="distance" id="distance" required onChange={handleChange}>
           <option>5 km</option>
@@ -36,9 +38,7 @@ const TrainingPlanInput = ({ onSubmit }) => {
           <option>Marathon</option>
         </select>
       </div>
-      <div>
-        <button className="content__training__input-form__button">Configure</button>
-      </div>
+      <FormButton label="Configure" />
     </form>
   );
 };
