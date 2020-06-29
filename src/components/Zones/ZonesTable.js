@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { zoneTableInfos } from '../../configurations/constants';
 import ZoneRow from './ZoneRow';
+import FormButton from '../common/FormButton';
 
 const ZonesTable = ({ zones, onSubmit }) => {
   const handleSubmit = event => {
@@ -14,10 +15,10 @@ const ZonesTable = ({ zones, onSubmit }) => {
     <div>
       <table>
         <thead>
-          <tr key="0">
-            <th key="01">Heart Rate Range</th>
-            <th key="02">Effort</th>
-            <th key="03">Effect</th>
+          <tr>
+            <th>Heart Rate Range</th>
+            <th>Effort</th>
+            <th>Effect</th>
           </tr>
         </thead>
         <tbody>
@@ -27,7 +28,7 @@ const ZonesTable = ({ zones, onSubmit }) => {
         </tbody>
       </table>
       <form onSubmit={handleSubmit}>
-        <button className="content__zones__input-form__button">Recalculate</button>
+        <FormButton label="Recalculate" />
       </form>
     </div>
   );
