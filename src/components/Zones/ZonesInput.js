@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import { useUserContext } from '../../contexts/UserContext';
 import { saveUserData } from '../../configurations/saveUserData';
+import InputBlock from '../common/InputBlock';
+import FormButton from '../common/FormButton';
 
 const ZonesInput = ({ onSubmit }) => {
   const initialState = { userAge: '', restRate: '' };
@@ -16,7 +18,7 @@ const ZonesInput = ({ onSubmit }) => {
       [name]: value
     });
   };
-  
+
   const handleSubmit = event => {
     event.preventDefault();
     onSubmit(form);
@@ -25,20 +27,14 @@ const ZonesInput = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="content__zones__input-form">
-      <div className="content__zones__input-form__block">
-        <label htmlFor="userAge">Age</label>
-        <input type="number" min="0" max="100" name="userAge" id="userAge" required
-          value={form.userAge} onChange={handleChange} />
-      </div>
-      <div className="content__zones__input-form__block">
-        <label htmlFor="restRate">Resting heart rate</label>
-        <input type="number" min="0" max="200" name="restRate" id="restRate" required
-          value={form.restRate} onChange={handleChange} />
-      </div>
-      <div>
-        <button className="content__zones__input-form__button">Calculate</button>
-      </div>
+    <form onSubmit={handleSubmit} className="input-form">
+      <InputBlock key="userAge" id="userAge" label="Age" type="number"
+        value={form.userAge} onChange={handleChange}
+      />
+      <InputBlock key="restRate" id="restRate" label="Resting heart rate" type="number"
+        value={form.restRate} onChange={handleChange}
+      />
+      <FormButton label="Calculate" />
     </form>
   );
 }
