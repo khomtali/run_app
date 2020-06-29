@@ -106,3 +106,5 @@ export const trainingDescriptions = [
     description: 'Athletes can consider adding a strength workout to this day, and beginner swimmers can consider adding a swim. However, rest is a critical element of improving fitness. Adding activity to this rest day is a high risk decision. Very few athletes, of any ability level, can maintain a 16+ week training program without regular days off.'
   }
 ];
+
+export const backendURL = 'https://apps-v2.travisshears.xyz/run-app/v1/';

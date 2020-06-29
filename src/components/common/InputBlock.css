@@ -1,0 +1,17 @@
+.input-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-form__block {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.input-form__block > * {
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+  color: #555;
+  margin-top: 5px;
+}

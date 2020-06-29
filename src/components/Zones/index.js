@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { useUserContext } from '../../contexts/UserContext';
+import TabHeader from '../common/TabHeader';
 import ZonesInput from './ZonesInput';
 import ZonesTable from './ZonesTable';
 import ZonesInfo from './ZonesInfo';
@@ -29,7 +30,7 @@ const Zones = () => {
 
   return (
     <div className="content__zones">
-      <h2>Heart Rate Zones</h2>
+      <TabHeader header="Heart Rate Zones" />
       {!zones.length ?
         <ZonesInput onSubmit={handleCalcSubmit} />
         :

@@ -4,6 +4,9 @@ import { useUserContext } from '../../contexts/UserContext';
 import { saveUserData } from '../../configurations/saveUserData';
 import { deleteUser } from '../../configurations/deleteUser';
 import { logout } from '../../configurations/auth';
+import TabHeader from '../common/TabHeader';
+import InputBlock from '../common/InputBlock';
+import FormButton from '../common/FormButton';
 import './styles.css';
 
 const UserProfile = () => {
@@ -47,30 +50,22 @@ const UserProfile = () => {
 
   return (
     <div className="content__profile">
-      <h2>User Profile</h2>
-      <form onSubmit={handleSubmit} className="content__profile__input-form">
-        <div className="content__profile__input-form__block">
-          <label htmlFor="userName">Name</label>
-          <input type="text" name="userName" id="userName" required
-            value={form.userName} onChange={handleChange} />
-        </div>
-        <div className="content__profile__input-form__block">
-          <label htmlFor="userNickname">Nickname</label>
-          <input type="text" name="userNickname" id="userNickname" required
-            value={form.userNickname} onChange={handleChange} />
-        </div>
-        <div className="content__profile__input-form__block">
-          <label htmlFor="userAge">Age</label>
-          <input type="number" min="0" max="100" name="userAge" id="userAge" required
-            value={form.userAge} onChange={handleChange} />
-        </div>
-        <div className="content__profile__input-form__block">
-          <label htmlFor="restRate">Resting heart rate</label>
-          <input type="number" min="0" max="200" name="restRate" id="restRate" required
-            value={form.restRate} onChange={handleChange} />
-        </div>
+      <TabHeader header="My Profile" />
+      <form onSubmit={handleSubmit} className="input-form">
+        <InputBlock key="userName" id="userName" label="Name" type="text"
+          value={form.userName} onChange={handleChange}
+        />
+        <InputBlock key="userNickname" id="userNickname" label="Nickname" type="text"
+          value={form.userNickname} onChange={handleChange}
+        />
+        <InputBlock key="userAge" id="userAge" label="Age" type="number"
+          value={form.userAge} onChange={handleChange}
+        />
+        <InputBlock key="restRate" id="restRate" label="Resting heart rate" type="number"
+          value={form.restRate} onChange={handleChange}
+        />
         <div>
-          <button className="content__profile__input-form__button">Save data</button>
+          <FormButton label="Save data" />
           <p>{savStatus}</p>
         </div>
       </form>

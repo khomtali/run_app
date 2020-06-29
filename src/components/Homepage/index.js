@@ -2,7 +2,6 @@ import React from 'react';
 
 import Title from './Title';
 import AppDescription from './AppDescription';
-import './styles.css';
 
 const Homepage = () => {
   return (
