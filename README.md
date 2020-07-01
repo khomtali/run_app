@@ -48,4 +48,5 @@ App to configure your personal running plan and track its completeness. Calculat
 ---
 
 *App is built as single-page-application using ReactJS.*
+
 *For more information about `create-react-app` please refer to [README.md](docs/React_README.md).*
