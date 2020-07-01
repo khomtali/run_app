@@ -26,7 +26,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/profile" activeStyle={activeStyle} className="navigation__link profile">
-            My Profile
+            User Profile
           </NavLink>
         </li>
       </ul>

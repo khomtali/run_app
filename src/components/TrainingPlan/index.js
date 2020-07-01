@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import TabHeader from '../common/TabHeader';
 import TrainingPlanInput from './TrainingPlanInput';
@@ -11,6 +12,7 @@ const TrainingPlan = () => {
   return (
     <div className="content__training">
       <TabHeader header="Training Plan" />
+      <p><Link to="/training/info" className="info-link">Read training descriptions</Link></p>
       <p>Feature coming soon!</p>
       <TrainingPlanInput onSubmit={handleConfigSubmit} />
     </div>

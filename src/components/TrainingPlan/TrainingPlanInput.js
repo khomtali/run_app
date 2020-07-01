@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { getTrainingTables } from '../../configurations/getTrainingTables';
 import FormButton from '../common/FormButton';
 
 const TrainingPlanInput = ({ onSubmit }) => {
@@ -18,7 +17,6 @@ const TrainingPlanInput = ({ onSubmit }) => {
   const handleSubmit = event => {
     event.preventDefault();
     onSubmit(form);
-    getTrainingTables();
   };
 
   return (

@@ -4,8 +4,9 @@ import { Route, Switch } from 'react-router-dom';
 import { useUserContext } from '../../contexts/UserContext';
 import Banner from '../Banner';
 import Sidebar from '../Sidebar';
-import Zones from '../Zones';
+import TrainingInfo from '../TrainingPlan/TrainingInfo';
 import TrainingPlan from '../TrainingPlan';
+import Zones from '../Zones';
 import UserProfile from '../UserProfile';
 import Homepage from '../Homepage/';
 import './styles.css';
@@ -21,6 +22,7 @@ const Main = () => {
         <div className="content">
           {user ?
             <Switch>
+              <Route path="/training/info" component={TrainingInfo} />
               <Route path="/training" component={TrainingPlan} />
               <Route path="/zones" component={Zones} />
               <Route path="/profile" component={UserProfile} />

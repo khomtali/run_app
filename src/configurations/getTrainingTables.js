@@ -4,7 +4,7 @@ export const getTrainingTables = async () => {
   });
   try {
     const { types } = await response.json();
-    console.log(types);
+    return types;
   } catch (err) {
     console.error(err);
   }

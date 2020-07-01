@@ -1,0 +1,20 @@
+.info-link, .back-link {
+  text-decoration: none;
+  color: #555;
+}
+
+.info-link:hover, .back-link:hover {
+  color: #4bd0a0;
+}
+
+.info-link::before {
+  content: '\F086';
+  font-family: fontello;
+  margin-right: 10px;
+}
+
+.back-link::before {
+  content: '\E800';
+  font-family: fontello;
+  margin-right: 10px;
+}
