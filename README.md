@@ -1,4 +1,4 @@
-# REDI Sprint 2020 Frontend Development 2, Final Project
+# ReDI Spring 2020 Frontend Development 2, Final Project
 
 Application Name: ReDI-Run-App
 
