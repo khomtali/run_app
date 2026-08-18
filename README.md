@@ -39,14 +39,21 @@ App to configure your personal running plan and track its completeness. Calculat
 ## How to setup and run ReDI-Run-App
 
 1. Clone repository to your computer
-   - with HTTPS `git clone https://github.com/redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
-   - with SSH `git clone git@github.com:redi-js-teachers/js_sprint_2020_final_project_khomtali.git`
-1. Go to the project directory `cd js_sprint_2020_final_project_khomtali`
-1. Then run `npm install` and wait for installing all modules
-1. Run `npm start` and enjoy :)
+   - with HTTPS `git clone https://github.com/khomtali/run_app.git`
+   - with SSH `git clone git@github.com:khomtali/run_app.git`
+1. Go to the project directory `cd run_app`
+1. Install Node.js 20.19 or newer
+1. Run `npm install`
+1. Run `npm start` and open the local URL shown in the terminal
+
+## Quality checks
+
+- `npm test` runs the test suite once
+- `npm run build` creates a production build in `dist/`
+- `npm audit` checks the installed dependency tree for known vulnerabilities
 
 ---
 
 *App is built as single-page-application using ReactJS.*
 
-*For more information about `create-react-app` please refer to [README.md](docs/React_README.md).*
+*The application is built with [Vite](https://vite.dev/) and React.*

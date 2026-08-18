@@ -1,5 +1,7 @@
+import { backendURL } from './constants';
+
 export const saveUserData = async (user, data) => {
-  const response = await fetch(process.env.REACT_APP_BACKEND_URL + 'user', {
+  const response = await fetch(backendURL + 'user', {
     'method': 'PATCH',
     'headers': {
       'authorization': `Bearer ${user.token}`,

@@ -1,5 +1,7 @@
+import { backendURL } from './constants';
+
 export const deleteUser = async (userToken) => {
-  const response = await fetch(process.env.REACT_APP_BACKEND_URL + 'user', {
+  const response = await fetch(backendURL + 'user', {
     'method': 'DELETE',
     'headers': {
       'authorization': `Bearer ${userToken}`

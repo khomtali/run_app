@@ -1,6 +1,5 @@
 import React from 'react';
 import { usePromiseTracker } from "react-promise-tracker";
-import { Heart } from 'react-spinners-css';
 
 import Header from './components/Header';
 import Main from './components/Main';
@@ -15,7 +14,7 @@ function App() {
       {
         (promiseInProgress === true) ?
           <div id="loading">
-            <Heart color="#4bd0a0" />
+            <div className="loading-spinner" role="status" aria-label="Loading" />
           </div>
           :
           <>
